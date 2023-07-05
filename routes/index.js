@@ -10,8 +10,7 @@ router.get("/movies", (req, res) => {
     method: "GET",
     headers: {
       accept: "application/json",
-      Authorization:
-        "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI4YjllNzJlMjc5ZGU4ZTFkMWU3Y2JlZjhmODllOWM4NiIsInN1YiI6IjY0YTUxY2ExOGM0NGI5MDE0ZTNiNzFhMyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.tAezSEEYjix6h4nnBfhpqh_ouaLQzwAr8i-tE0Wbqx8",
+      Authorization: `Bearer ${OWM_API_KEY}`,
     },
   };
   fetch(url, options)
